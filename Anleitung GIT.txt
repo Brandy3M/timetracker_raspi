@@ -1,0 +1,87 @@
+Anleitung GIT:
+Installation von GIT in VSCODE:
+winget install --id Git.Git -e --source winget
+
+Source Control:
+Select Folder (Projekt)
+
+D:\01_CN\Raspberry_CN-108.1-108.3\Projektvorstellung>git init
+Initialized empty Git repository in D:/01_CN/Raspberry_CN-108.1-108.3/Projektvorstellung/.git/
+
+All files turn green on the left:
+Picture
+
+For a first commit you Need to:
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+git commit -m "Mein erster Commit"
+                 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)      
+        Story 108.2 Zeiterfassungsystem.md
+        Zeiterfassung Datenbank-Entity Relationship Model - Miro.url
+        Zeiterfassung Datenbank_Entity Relationship Model.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\01_CN\Raspberrygit add ".\Story 108.2 Zeiterfassungsystem.md"
+warning: in the working copy of 'Story 108.2 Zeiterfassungsystem.md', LF will be replaced by CRLF the next time Git touches it
+
+D:\01_CN\Raspberry_CN-108.1-108.3\Projektvorstellung>git commit -m "Mein erster Commit"
+[master (root-commit) 2d426b3] Mein erster Commit
+ 1 file changed, 249 insertions(+)
+ create mode 100644 Story 108.2 Zeiterfassungsystem.md
+
+
+Herunterladen, Bearbeiten & Hochladen:
+git clone https://github.com/username/projektname.git
+
+cd projektname
+
+> open file and perform changes > safe
+
+git Status (Displays files with changes e.g., modified: README.md)
+
+Add to staging-Area:
+git add README.md
+
+Add to repository/Project:
+git commit -m "REASON: README aktualisieren"
+
+git push origin main (Push in main-Branch)
+
+git push origin feature/meine-aenderung (Push in ein feature-Branch)
+
+
+
+Herunterladen: git Clone
+Ordner auswählen: cd Projektname
+Bearbeiten: Datei ändern und speichern
+Prüfen: git status
+Commit: git add + git commit
+Hochladen: git push
+
+Common history of files:
+git log
+
+
+
+For github-project:
+git clone https://github.com/Brandy3M/timetracker_raspi.git
+
+> Authorization of git-ecosystem is needed:
+
+Herunterladen: git Clone
+Ordner auswählen: cd Projektname
+Bearbeiten: Datei ändern und speichern
+Prüfen: git status
+Commit: git add + git commit
+Hochladen: git push
+
